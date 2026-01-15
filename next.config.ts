@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: true,
+  trailingSlash: true,
 };
 
 export default nextConfig;
