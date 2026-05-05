@@ -92,7 +92,7 @@ export default function BlogPage() {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3 text-sm">
-                    <span className="px-3 py-1 bg-primary/10 text-primary rounded-full font-medium">
+                    <span className="px-3 py-1 bg-primary/10 text-primary rounded-full font-medium text-center">
                       {post.category}
                     </span>
                     <time

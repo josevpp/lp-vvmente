@@ -91,7 +91,7 @@ export default async function BlogPost({
       year: "numeric",
       month: "long",
       day: "numeric",
-    }
+    },
   );
 
   // Get other posts (excluding current one)
@@ -134,6 +134,13 @@ export default async function BlogPost({
     articleSection: post.category,
     wordCount: post.content.join(" ").split(/\s+/).length,
     inLanguage: "pt-BR",
+  };
+
+  const renderInlineBold = (text: string) => {
+    const parts = text.split(/\*\*(.*?)\*\*/g);
+    return parts.map((part, i) =>
+      i % 2 === 1 ? <strong key={i}>{part}</strong> : part,
+    );
   };
 
   return (
@@ -217,54 +224,70 @@ export default async function BlogPost({
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="bg-white rounded-lg shadow-sm border p-8 md:p-12">
             <div className="prose prose-lg max-w-none">
-              {post.content.map((paragraph, index) => {
-                // Check if paragraph is a heading
-                if (paragraph.startsWith("## ")) {
-                  return (
-                    <h2
-                      key={index}
-                      className="text-2xl md:text-3xl font-bold mt-8 mb-4 text-primary"
-                    >
-                      {paragraph.replace("## ", "")}
-                    </h2>
-                  );
-                } else if (paragraph.startsWith("### ")) {
-                  return (
-                    <h3
-                      key={index}
-                      className="text-xl md:text-2xl font-semibold mt-6 mb-3"
-                    >
-                      {paragraph.replace("### ", "")}
-                    </h3>
-                  );
+              {(() => {
+                const elements: React.ReactNode[] = [];
+                let i = 0;
+                while (i < post.content.length) {
+                  const paragraph = post.content[i];
+                  if (paragraph.startsWith("## ")) {
+                    elements.push(
+                      <h2
+                        key={i}
+                        className="text-2xl md:text-3xl font-bold mt-8 mb-4 text-primary"
+                      >
+                        {renderInlineBold(paragraph.replace(/^## /, ""))}
+                      </h2>,
+                    );
+                    i++;
+                  } else if (paragraph.startsWith("### ")) {
+                    elements.push(
+                      <h3
+                        key={i}
+                        className="text-xl md:text-2xl font-semibold mt-6 mb-3"
+                      >
+                        {renderInlineBold(paragraph.replace(/^### /, ""))}
+                      </h3>,
+                    );
+                    i++;
+                  } else if (paragraph.startsWith("* ")) {
+                    const bulletStart = i;
+                    const items: string[] = [];
+                    while (
+                      i < post.content.length &&
+                      post.content[i].startsWith("* ")
+                    ) {
+                      items.push(post.content[i].replace(/^\* /, ""));
+                      i++;
+                    }
+                    elements.push(
+                      <ul
+                        key={bulletStart}
+                        className="list-disc list-outside ml-6 mb-4 space-y-1"
+                      >
+                        {items.map((item, j) => (
+                          <li
+                            key={j}
+                            className="leading-relaxed text-foreground/90"
+                          >
+                            {renderInlineBold(item)}
+                          </li>
+                        ))}
+                      </ul>,
+                    );
+                  } else {
+                    elements.push(
+                      <p
+                        key={i}
+                        className="mb-4 leading-relaxed text-foreground/90"
+                      >
+                        {renderInlineBold(paragraph)}
+                      </p>,
+                    );
+                    i++;
+                  }
                 }
-                // Check if paragraph contains bold or italic markdown
-                else if (paragraph.includes("**") || paragraph.includes("*")) {
-                  return (
-                    <p
-                      key={index}
-                      className="mb-4 leading-relaxed text-foreground/90"
-                      dangerouslySetInnerHTML={{
-                        __html: paragraph
-                          .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-                          .replace(/\*(.*?)\*/g, "<em>$1</em>")
-                          .replace(/\n/g, "<br />"),
-                      }}
-                    />
-                  );
-                }
-                // Regular paragraph
-                else {
-                  return (
-                    <p
-                      key={index}
-                      className="mb-4 leading-relaxed text-foreground/90"
-                    >
-                      {paragraph}
-                    </p>
-                  );
-                }
-              })}
+                return elements;
+              })()}
             </div>
 
             {/* CTA Box */}
