@@ -31,11 +31,45 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   // Group posts by category
   const categories = Array.from(
-    new Set(blogPosts.map((post) => post.category))
+    new Set(blogPosts.map((post) => post.category)),
   );
+
+  const blogStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    url: `${siteUrl}/blog`,
+    name: "Blog Vivamente",
+    description:
+      "Artigos e conteúdos sobre desenvolvimento infantil, psicologia, educação e muito mais",
+    publisher: {
+      "@type": "Organization",
+      name: "Vivamente - Clínica de Desenvolvimento Infantil",
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/images/logo.png`,
+      },
+    },
+    blogPost: blogPosts.map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.metaDescription,
+      url: `${siteUrl}/blog/${post.slug}`,
+      datePublished: post.date,
+      image: post.image ? `${siteUrl}${post.image}` : undefined,
+      author: {
+        "@type": "Person",
+        name: post.author,
+      },
+    })),
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogStructuredData) }}
+      />
       <Header />
 
       <main className="grow pt-20 pb-16">

@@ -116,14 +116,14 @@ export default async function BlogPost({
       "@type": "Person",
       name: post.author,
       jobTitle: "Psicóloga Clínica",
-      credential: post.authorCRP,
+      identifier: post.authorCRP,
     },
     publisher: {
       "@type": "Organization",
       name: "Vivamente - Clínica de Desenvolvimento Infantil",
       logo: {
         "@type": "ImageObject",
-        url: `${url}images/logo.png`,
+        url: `${url}/images/logo.png`,
       },
     },
     mainEntityOfPage: {
@@ -134,6 +134,31 @@ export default async function BlogPost({
     articleSection: post.category,
     wordCount: post.content.join(" ").split(/\s+/).length,
     inLanguage: "pt-BR",
+  };
+
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Início",
+        item: url,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: `${url}/blog`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `${url}/blog/${post.slug}`,
+      },
+    ],
   };
 
   const renderInlineBold = (text: string) => {
@@ -149,6 +174,12 @@ export default async function BlogPost({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbStructuredData),
+        }}
       />
 
       <Header />

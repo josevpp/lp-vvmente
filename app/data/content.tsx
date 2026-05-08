@@ -197,20 +197,30 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
-{
+  {
     slug: "tdah-em-criancas-como-identificar-e-tratar",
-    title: "TDAH em crianças: o que é, como identificar e qual o melhor tratamento",
+    title:
+      "TDAH em crianças: o que é, como identificar e qual o melhor tratamento",
     description:
       "Entenda os sinais do TDAH em crianças, como é feito o diagnóstico clínico e quais abordagens terapêuticas têm maior respaldo científico.",
     metaDescription:
       "Saiba tudo sobre TDAH em crianças: sintomas, diagnóstico e tratamento multidisciplinar. Atendimento especializado em Campina Grande do Sul.",
     author: "Renata Albuquerque do Prado",
-    authorCRP: "CRP 08/34405",
+    authorCRP: "CRP 08/43466",
     date: "2026-05-05",
     image: "/images/tdah.webp",
-    imageAlt: "Menino com expressão de desatenção, ilustrando dificuldades relacionadas ao TDAH em crianças",
+    imageAlt:
+      "Menino com expressão de desatenção, ilustrando dificuldades relacionadas ao TDAH em crianças",
     category: "TDAH e Neurodesenvolvimento",
-    keywords: ["TDAH em crianças", "sintomas de TDAH infantil", "diagnóstico de TDAH", "tratamento para TDAH", "neurodesenvolvimento infantil", "psicologia infantil", "Campina Grande do Sul"],
+    keywords: [
+      "TDAH em crianças",
+      "sintomas de TDAH infantil",
+      "diagnóstico de TDAH",
+      "tratamento para TDAH",
+      "neurodesenvolvimento infantil",
+      "psicologia infantil",
+      "Campina Grande do Sul",
+    ],
     content: [
       "Você já ouviu um professor reclamar que seu filho não consegue parar quieto na sala de aula? Ou percebeu que ele começa muitas tarefas mas raramente termina alguma? Esses podem ser sinais do Transtorno do Déficit de Atenção e Hiperatividade — o TDAH — uma das condições do neurodesenvolvimento mais prevalentes na infância.",
       "O TDAH afeta entre 5% e 7% das crianças em idade escolar, segundo dados da literatura científica, e impacta diretamente a aprendizagem, as relações sociais e a autoestima. Neste artigo, você vai entender o que é o TDAH, como ele se manifesta em diferentes idades, quais são os critérios diagnósticos e quais abordagens terapêuticas têm maior respaldo científico.",
@@ -267,18 +277,28 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dislexia-em-criancas-como-identificar-e-ajudar",
-    title: "Dislexia: o que é, como identificar na criança e como ajudar no processo de aprendizagem",
+    title:
+      "Dislexia: o que é, como identificar na criança e como ajudar no processo de aprendizagem",
     description:
       "Descubra os sinais de dislexia em crianças, como é feito o diagnóstico e quais intervenções favorecem a leitura e a escrita.",
     metaDescription:
       "Entenda a dislexia em crianças: sinais de alerta, avaliação e estratégias de intervenção. Atendimento especializado em Campina Grande do Sul.",
     author: "Renata Albuquerque do Prado",
-    authorCRP: "CRP 08/34405",
+    authorCRP: "CRP 08/43466",
     date: "2026-05-04",
     image: "/images/dislexia.webp",
-    imageAlt: "Criança com dificuldade de leitura e letras ao redor, representando dislexia em crianças",
+    imageAlt:
+      "Criança com dificuldade de leitura e letras ao redor, representando dislexia em crianças",
     category: "Aprendizagem e Desenvolvimento",
-    keywords: ["dislexia em crianças", "sinais de dislexia", "dificuldade de leitura infantil", "transtorno de aprendizagem", "intervenção psicopedagógica", "fonoaudiologia infantil", "Campina Grande do Sul"],
+    keywords: [
+      "dislexia em crianças",
+      "sinais de dislexia",
+      "dificuldade de leitura infantil",
+      "transtorno de aprendizagem",
+      "intervenção psicopedagógica",
+      "fonoaudiologia infantil",
+      "Campina Grande do Sul",
+    ],
     content: [
       "Seu filho se esforça muito mas continua com dificuldade para ler? Troca letras, lê de forma silabada mesmo após anos de escolaridade ou simplesmente evita qualquer situação que envolva leitura? Esses podem ser sinais de dislexia — uma condição do neurodesenvolvimento que afeta entre 5% e 15% da população, sendo uma das causas mais comuns de dificuldade escolar.",
       "A dislexia não está relacionada à inteligência. Crianças disléxicas são igualmente inteligentes e criativas — elas simplesmente processam a linguagem escrita de uma maneira diferente. Com o suporte adequado, podem ter um desenvolvimento acadêmico muito satisfatório.",
@@ -333,18 +353,28 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "atraso-de-fala-em-criancas-quando-se-preocupar",
-    title: "Atraso de fala na criança: quando é normal se preocupar e o que fazer",
+    title:
+      "Atraso de fala na criança: quando é normal se preocupar e o que fazer",
     description:
       "Saiba identificar sinais de atraso de fala em crianças, conheça marcos do desenvolvimento e veja quando procurar avaliação especializada.",
     metaDescription:
       "Atraso de fala em crianças: sinais de alerta, possíveis causas e tratamento fonoaudiológico. Atendimento em Campina Grande do Sul.",
     author: "Renata Albuquerque do Prado",
-    authorCRP: "CRP 08/34405",
+    authorCRP: "CRP 08/43466",
     date: "2026-05-03",
     image: "/images/atraso-na-fala.webp",
-    imageAlt: "Profissional orientando criança sobre movimentos da boca durante exercício de fala",
+    imageAlt:
+      "Profissional orientando criança sobre movimentos da boca durante exercício de fala",
     category: "Fonoaudiologia e Comunicação",
-    keywords: ["atraso de fala em crianças", "desenvolvimento da linguagem infantil", "sinais de atraso de fala", "fonoaudiologia infantil", "estimulação de linguagem", "comunicação infantil", "Campina Grande do Sul"],
+    keywords: [
+      "atraso de fala em crianças",
+      "desenvolvimento da linguagem infantil",
+      "sinais de atraso de fala",
+      "fonoaudiologia infantil",
+      "estimulação de linguagem",
+      "comunicação infantil",
+      "Campina Grande do Sul",
+    ],
     content: [
       "Todo pai e toda mãe ficam atentos ao desenvolvimento da fala do filho. Quando um bebê começa a falar mais tarde do que os outros, é natural que surgissem dúvidas e preocupações. Afinal, quando o atraso é apenas uma variação normal e quando é sinal de que a criança precisa de apoio especializado?",
       "A resposta não é simples, mas existe. Neste artigo, explicamos os marcos do desenvolvimento da linguagem, os sinais que devem gerar atenção e quais profissionais podem ajudar a entender e tratar o atraso de fala.",
@@ -408,18 +438,28 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "regulacao-emocional-na-infancia",
-    title: "Regulação emocional na infância: como ajudar seu filho a lidar com as emoções",
+    title:
+      "Regulação emocional na infância: como ajudar seu filho a lidar com as emoções",
     description:
       "Entenda o que é regulação emocional na criança, identifique sinais de dificuldade e veja estratégias práticas para o dia a dia.",
     metaDescription:
       "Regulação emocional criança: sinais de dificuldade, orientação para pais e quando buscar psicologia infantil em Campina Grande do Sul.",
     author: "Renata Albuquerque do Prado",
-    authorCRP: "CRP 08/34405",
+    authorCRP: "CRP 08/43466",
     date: "2026-05-02",
     image: "/images/regulacao-emocional.webp",
-    imageAlt: "Profissional e criança com cartões de emoção, representando regulação emocional infantil",
+    imageAlt:
+      "Profissional e criança com cartões de emoção, representando regulação emocional infantil",
     category: "Saúde Emocional e Psicologia Infantil",
-    keywords: ["regulação emocional criança", "birras na infância", "psicologia infantil", "controle emocional infantil", "frustração na criança", "orientação parental", "Campina Grande do Sul"],
+    keywords: [
+      "regulação emocional criança",
+      "birras na infância",
+      "psicologia infantil",
+      "controle emocional infantil",
+      "frustração na criança",
+      "orientação parental",
+      "Campina Grande do Sul",
+    ],
     content: [
       "Birras intensas, choros sem motivo aparente, explosões de raiva ou medo de situações do cotidiano — esses comportamentos são comuns na infância, mas quando aparecem com frequência e intensidade exageradas, podem indicar dificuldades na regulação emocional.",
       "A boa notícia é que a regulação emocional é uma habilidade que pode — e deve — ser desenvolvida. E os pais têm um papel essencial nesse processo. Neste artigo, explicamos o que é regulação emocional, por que ela é tão importante e como apoiar seu filho a desenvolver essa habilidade fundamental.",
@@ -466,18 +506,28 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "alimentacao-seletiva-em-criancas",
-    title: "Alimentação seletiva em crianças: quando é fase e quando precisa de ajuda especializada",
+    title:
+      "Alimentação seletiva em crianças: quando é fase e quando precisa de ajuda especializada",
     description:
       "Veja como diferenciar fase alimentar de seletividade persistente e conheça abordagens terapêuticas para ampliar o repertório alimentar infantil.",
     metaDescription:
       "Alimentação seletiva criança: sinais de alerta, causas sensoriais e tratamento com terapia ocupacional em Campina Grande do Sul.",
     author: "Renata Albuquerque do Prado",
-    authorCRP: "CRP 08/34405",
+    authorCRP: "CRP 08/43466",
     date: "2026-05-01",
     image: "/images/alimentacao-seletiva.webp",
-    imageAlt: "Criança recusando alimentos no prato, situação comum em alimentação seletiva infantil",
+    imageAlt:
+      "Criança recusando alimentos no prato, situação comum em alimentação seletiva infantil",
     category: "Desenvolvimento Infantil e Terapia Ocupacional",
-    keywords: ["alimentação seletiva criança", "seletividade alimentar infantil", "terapia ocupacional alimentar", "integração sensorial", "dificuldade para comer", "ARFID infantil", "Campina Grande do Sul"],
+    keywords: [
+      "alimentação seletiva criança",
+      "seletividade alimentar infantil",
+      "terapia ocupacional alimentar",
+      "integração sensorial",
+      "dificuldade para comer",
+      "ARFID infantil",
+      "Campina Grande do Sul",
+    ],
     content: [
       "'Meu filho só come macarrão com manteiga.' 'Ela recusa tudo que tem cor verde.' 'Ele vomita quando sente o cheiro de certos alimentos.' Essas situações são muito mais comuns do que muitos pais imaginam — e são fonte de estresse enorme no dia a dia familiar.",
       "A alimentação seletiva é uma das principais queixas trazidas por pais de crianças pequenas. Mas como saber quando se trata de uma fase normal do desenvolvimento e quando é necessário buscar ajuda especializada? É sobre isso que falaremos neste artigo.",
@@ -527,18 +577,28 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "como-escolher-terapeuta-infantil",
-    title: "Como escolher um terapeuta infantil: tudo que os pais precisam saber",
+    title:
+      "Como escolher um terapeuta infantil: tudo que os pais precisam saber",
     description:
       "Entenda quais critérios usar para escolher terapeuta infantil e como encontrar o profissional mais adequado para seu filho.",
     metaDescription:
       "Saiba como escolher terapeuta infantil com segurança: formação, vínculo e abordagem multidisciplinar em Campina Grande do Sul.",
     author: "Renata Albuquerque do Prado",
-    authorCRP: "CRP 08/34405",
+    authorCRP: "CRP 08/43466",
     date: "2026-04-30",
     image: "/images/renata.webp",
-    imageAlt: "Psicóloga infantil Renata Albuquerque do Prado em ambiente de atendimento clínico",
+    imageAlt:
+      "Psicóloga infantil Renata Albuquerque do Prado em ambiente de atendimento clínico",
     category: "Orientação aos Pais",
-    keywords: ["como escolher terapeuta infantil", "psicólogo infantil", "terapia ocupacional infantil", "fonoaudiologia infantil", "atendimento multidisciplinar", "orientação para pais", "Campina Grande do Sul"],
+    keywords: [
+      "como escolher terapeuta infantil",
+      "psicólogo infantil",
+      "terapia ocupacional infantil",
+      "fonoaudiologia infantil",
+      "atendimento multidisciplinar",
+      "orientação para pais",
+      "Campina Grande do Sul",
+    ],
     content: [
       "A decisão de buscar apoio terapêutico para um filho raramente é simples. Envolve reconhecer que algo precisa de atenção, superar eventuais resistências internas ou culturais, e depois enfrentar um universo de opções: psicólogos, terapeutas ocupacionais, fonoaudiólogos, psicopedagogos, neuropsicólogos... Por onde começar?",
       "Este artigo foi escrito para ajudar pais e cuidadores a navegar por esse processo com mais clareza e confiança. Vamos falar sobre quando buscar terapia, quais são as diferentes especialidades, o que observar na escolha do profissional e como tornar o processo mais tranquilo para toda a família.",
@@ -597,7 +657,7 @@ export const blogPosts: BlogPost[] = [
       "Oferecemos uma triagem inicial sem custo e sem compromisso para que você conheça nossa equipe, tire suas dúvidas e entenda como podemos contribuir para o desenvolvimento pleno do seu filho. Entre em contato pelo WhatsApp e agende hoje mesmo.",
     ],
   },
-    {
+  {
     slug: "sinais-de-autismo-na-infancia",
     title: "Sinais de autismo na infância: quando buscar ajuda especializada?",
     description:
@@ -605,7 +665,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       "Identifique os primeiros sinais de autismo na infância e saiba quando procurar ajuda especializada. Atendimento em psicologia infantil em Campina Grande do Sul.",
     author: "Renata Albuquerque do Prado",
-    authorCRP: "CRP 08/34405",
+    authorCRP: "CRP 08/43466",
     date: "2026-01-08",
     image: "/images/terapia.webp",
     imageAlt:
@@ -646,7 +706,7 @@ export const blogPosts: BlogPost[] = [
 
       "Nosso foco é entender as necessidades individuais de cada criança, oferecendo estratégias baseadas em evidências para auxiliar no desenvolvimento de crianças com autismo, TDAH e outras condições.",
 
-      "**Renata Albuquerque do Prado – Psicóloga Clínica**  \n**CRP: 08/34405**",
+      "**Renata Albuquerque do Prado – Psicóloga Clínica**  \n**CRP: 08/43466**",
 
       "*Este conteúdo tem caráter meramente informativo e educativo, não substituindo a consulta com um profissional especializado. Se você tem dúvidas sobre o desenvolvimento do seu filho, agende uma avaliação individualizada.*",
     ],
@@ -660,7 +720,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       "Descubra como a ludoterapia ajuda o desenvolvimento das crianças através do brincar. Conheça o nosso espaço de psicologia infantil em Campina Grande do Sul.",
     author: "Renata Albuquerque do Prado",
-    authorCRP: "CRP 08/34405",
+    authorCRP: "CRP 08/43466",
     date: "2026-01-07",
     image: "/images/atendimento.webp",
     imageAlt:
@@ -698,7 +758,7 @@ export const blogPosts: BlogPost[] = [
 
       "Nossa clínica em Campina Grande do Sul é preparada com um espaço lúdico e seguro, pensado especificamente para que as crianças se sintam à vontade para serem elas mesmas enquanto trabalham suas dificuldades.",
 
-      "**Renata Albuquerque do Prado – Psicóloga Clínica**  \n**CRP: 08/34405**",
+      "**Renata Albuquerque do Prado – Psicóloga Clínica**  \n**CRP: 08/43466**",
 
       "*Este texto tem caráter informativo e educativo. O processo terapêutico é individualizado e deve ser conduzido por um profissional devidamente registrado no CRP.*",
     ],
@@ -711,7 +771,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       "A psicologia infantil é para todas as crianças, com ou sem diagnóstico. Saiba como apoiamos o desenvolvimento emocional e social em Campina Grande do Sul.",
     author: "Renata Albuquerque do Prado",
-    authorCRP: "CRP 08/34405",
+    authorCRP: "CRP 08/43466",
     date: "2026-01-06",
     image: "/images/equipe.webp",
     imageAlt:
@@ -754,7 +814,7 @@ export const blogPosts: BlogPost[] = [
 
       "Em nossa clínica, atendemos famílias de Campina Grande do Sul e região, oferecendo um olhar atento e especializado para cada demanda. O foco sempre será o bem-estar da criança e a harmonia da dinâmica familiar.",
 
-      "**Renata Albuquerque do Prado – Psicóloga Clínica**  \n**CRP: 08/34405**",
+      "**Renata Albuquerque do Prado – Psicóloga Clínica**  \n**CRP: 08/43466**",
 
       "*Conteúdo informativo em conformidade com o Código de Ética do Psicólogo. Para entender as necessidades específicas do seu filho, agende uma consulta de avaliação.*",
     ],
@@ -768,7 +828,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       "Saiba como a psicologia ajuda crianças com dificuldades escolares, TDAH e desafios de comportamento. Atendimento especializado em Campina Grande do Sul.",
     author: "Renata Albuquerque do Prado",
-    authorCRP: "CRP 08/34405",
+    authorCRP: "CRP 08/43466",
     date: "2026-01-05",
     image: "/images/instalacoes.webp",
     imageAlt:
@@ -813,7 +873,7 @@ export const blogPosts: BlogPost[] = [
 
       "Se o seu filho tem apresentado resistência para ir à escola, dificuldades de aprendizagem ou problemas de comportamento, saiba que ele não precisa passar por isso sozinho. O acompanhamento psicológico é um investimento no futuro e no bem-estar emocional dele.",
 
-      "**Renata Albuquerque do Prado – Psicóloga Clínica**  \n**CRP: 08/34405**",
+      "**Renata Albuquerque do Prado – Psicóloga Clínica**  \n**CRP: 08/43466**",
 
       "*Texto informativo de acordo com as normas do CFP. O acompanhamento psicológico é um processo individualizado. Para entender o caso do seu filho, agende uma avaliação.*",
     ],
@@ -1125,68 +1185,60 @@ export const structuredData = {
     closes: "18:00",
   },
   medicalSpecialty: [
-    "Pediatric Psychology",
-    "Speech Therapy",
-    "Occupational Therapy",
-    "Educational Psychology",
-    "Neuropsychology",
+    { "@id": "https://schema.org/Psychiatric" },
+    { "@id": "https://schema.org/SpeechPathology" },
+    { "@id": "https://schema.org/Physiotherapy" },
+    { "@id": "https://schema.org/Pediatric" },
+    { "@id": "https://schema.org/Neurologic" },
   ],
-  areaServed: {
-    "@type": "City",
-    name: "Campina Grande do Sul",
-    containedIn: {
-      "@type": "State",
-      name: "Paraná",
-    },
-  },
+  areaServed: [
+    { "@type": "City", name: "Campina Grande do Sul" },
+    { "@type": "City", name: "Quatro Barras" },
+    { "@type": "City", name: "Colombo" },
+    { "@type": "City", name: "Piraquara" },
+    { "@type": "City", name: "São José dos Pinhais" },
+    { "@type": "City", name: "Curitiba" },
+  ],
   sameAs: ["https://www.instagram.com/vvmente"],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Serviços de Desenvolvimento Infantil",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Psicologia Infantil",
-          description:
-            "Oferecemos um espaço seguro para a criança processar emoções e comportamentos.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Fonoaudiologia",
-          description:
-            "Focada no desenvolvimento das habilidades de comunicação.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Terapia Ocupacional",
-          description: "Estímulo às habilidades motoras e sensoriais.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Psicopedagogia",
-          description: "Suporte especializado no processo de aprendizagem.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Neuropsicologia",
-          description:
-            "Investigação detalhada das funções cognitivas, como memória e atenção.",
-        },
-      },
-    ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    bestRating: "5",
+    worstRating: "1",
+    reviewCount: 20,
   },
+  availableService: [
+    {
+      "@type": "PsychologicalTreatment",
+      name: "Psicologia Infantil",
+      description:
+        "Oferecemos um espaço seguro para a criança processar emoções e comportamentos.",
+      relevantSpecialty: { "@id": "https://schema.org/Psychiatric" },
+    },
+    {
+      "@type": "MedicalTherapy",
+      name: "Fonoaudiologia",
+      description: "Focada no desenvolvimento das habilidades de comunicação.",
+      relevantSpecialty: { "@id": "https://schema.org/SpeechPathology" },
+    },
+    {
+      "@type": "OccupationalTherapy",
+      name: "Terapia Ocupacional",
+      description: "Estímulo às habilidades motoras e sensoriais.",
+      relevantSpecialty: { "@id": "https://schema.org/Physiotherapy" },
+    },
+    {
+      "@type": "MedicalTherapy",
+      name: "Psicopedagogia",
+      description: "Suporte especializado no processo de aprendizagem.",
+      relevantSpecialty: { "@id": "https://schema.org/Pediatric" },
+    },
+    {
+      "@type": "MedicalTherapy",
+      name: "Neuropsicologia",
+      description:
+        "Investigação detalhada das funções cognitivas, como memória e atenção.",
+      relevantSpecialty: { "@id": "https://schema.org/Neurologic" },
+    },
+  ],
 };
